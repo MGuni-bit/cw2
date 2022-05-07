@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {box-sizing: border-box;}
+
+body, html {
+  margin:0;
+  font-family:'Poppins', sans-serif;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE *//* EVERYPAGE */
+
+/* Desktop & Mobile *//* Desktop & Mobile *//* Desktop & Mobile *//* Desktop & Mobile *//* Desktop & Mobile *//* Desktop & Mobile */
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+}
+
+.columnfooter {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  background-color: grey;
+
+}
+
+
+@media screen and (min-width: 800px) {  /* MOBILE *//* MOBILE *//* MOBILE */
+
+.footer {
+        position: relative ;
+        left: 0;
+        bottom:0;
+        width: 100%;
+        background-color: grey;
+        color: white;
+        text-align: center;
+     }
+
+.columnfooter {
+       float: left;
+       width: 33.3%;
+       padding: 10px;
+       bottom: 50px;
+       position:  ;
+     }
+
+.row {
+       bottom: 100px;
+       position: relative ;
+     }}
+
+.darkmode .columnfooter, .footer {
+       background-color: black;
+     }
+
+.fa {
+  padding: 20px;
+  font-size: 1050px;
+  min-width:30px ;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+.divider {
+  paddng: 5%;
+}
+
+.darkmode {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-radius: ;
+  margin:0%;
+  transition: 0.5s;
+}
+
+
+
+.darkmodebutton button{
+  background-color: grey;
+  border: none;
+  color: black;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: ;
+  position:fixed ;
+  z-index: 100;
+  opacity: 0.7;
+	min-width:200px;
+	height:2%;
+	bottom:50%;
+	left:100%;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+.darkmode .darkmodebutton button {
+  opacity: 0.8;
+}
+
+
+
+.main {
+  margin-top:275px;
+  padding:2% 2% 150px;
+  font-size:30px;
+  width: 100%;
+  max-width: ;
+}
+
+.darkmode .main,   {
+  background-color: black;
+  padding: 0px;
+}
+
+@media screen and (max-width: 700px) {  /* MOBILE *//* MOBILE *//* MOBILE */
+
+.main {
+  margin-top:240px;
+  margin-bottom:200px;
+  padding:2vh 2vh 10px;
+}}
+
+/* Full-width input fields */
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+.gitbtn button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 16px;
+}
+
+.darkmode .gitbtn button {
+  background-color: white;
+  color: black;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  background-color: red;
+  float: left;
+}
+
+.submitbtn {
+  background-color: green;
+  float: right;
+}
+
+.cancelbtn,  .submitbtn {
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* Float cancel and submit buttons and add an equal width */
+
+ @media screen and (min-width: 700px) { /* DESKTOP *//* DESKTOP *//* DESKTOP */
+.cancelbtn, .submitbtn {
+  float: inherit;
+  width: 45%;
+  border-radius: 15px;
+  font-size: 25px;
+  border-width: 2px;
+  border-color: black;
+}
+
+.cancelbtn {
+  margin-right: 5%;
+}
+
+}
+
+@media screen and (max-width: 700px) {  /* MOBILE *//* MOBILE *//* MOBILE */
+.cancelbtn,  .submitbtn {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+
+
+}
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 50;
+  bottom: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+  transition: 1s;
+  color: black;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  top: 50;
+  border-radius: 15px;
+}
+
+/* Style the horizontal ruler */
+.modal hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+/* Change width for cancel button and signup button on small screens */
+@media only screen and (max-width: 700px) { /* MOBILE SCREEN */
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+
+  #id01 span {
+  display:none;
+
+  }
+}
+
+/*  DESKTOP */
+
+#navbar {
+  overflow: hidden;
+  background-color: black;
+  padding: 15px 10px;
+  transition: 0.5s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+#navbar a span {
+  font-size: 50px;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+
+#navbar a:hover {
+  background-color:  #4d4d4d;
+  color: white;
+  opacity: 0.9;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: black;
+}
+
+#navbar-right {
+  float: right;
+}
+
+ #desktopheader {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  background: linear-gradient(to bottom, #000000 5%, #ffffff 88%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  top:180px ;
+  float: left;
+  position: fixed;
+  font-size: 30px;
+}
+
+
+
+ @media screen and (max-width: 699px) { /* DESKTOP *//* DESKTOP *//* DESKTOP */
+  #navbar, #desktopheader {
+    display:none;
+  }
+
+  .footer {
+    position: relative;
+    bottom: 85px;
+  }
+
+}
+
+
+
+/* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE */
+
+@media screen and (min-width: 700px) {
+  .mobilebar  {
+    display: none ;
+  }
+#mobileheader {
+  display: none ;
+   }
+.columnfooter {
+  min-height: 100px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+  .mobilebar span {
+    display: ;
+  }
+
+.mobilebar p {
+  font-size: 10px;
+  display: ;
+}
+
+.mobilebar a {
+  padding-top: 9px;
+}
+
+}
+
+
+.mobilebar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  display: ;
+}
+
+.mobilebar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  padding-top:  ;
+  padding-bottom:px ;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%;
+
+}
+
+.mobilebar a.active {
+  background-color: white;
+  color: black;
+}
+
+.darkmode .mobilebar{
+  width: 100%;
+}
+
+.darkmode .mobilebar a{
+  color: black;
+  background-color: white;
+}
+
+.darkmode .mobilebar a.active{
+  background-color: black;
+  color: white;
+}
+
+
+#mobileheader {
+  background-color: black;
+  padding: 15px 10px;
+  color: white;
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.5s;
+  z-index: 99;
+  display: ;
+}
+
+
+.darkmode #mobileheader{
+  background-color: black;
+  color: white;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.darkmode #desktopheader {
+  background: white;
+  color: black;
+  transition: 0.5s;
+}
+
+
+
+
+/* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE *//* HOMEPAGE */
+
+
+
+.profile {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.profile .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 28px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.profile .button:hover {
+  background-color: #555;
+}
+
+.oneleft{
+width: 40%;
+float:left;
+padding:15px;
+}
+
+.twoleft{
+width: 60%;
+float:left;
+padding:15px;
+}
+
+@media screen and (max-width: 700px) {
+  .oneleft , .twoleft {
+    width: 100%;
+  }
+}
+
+.videobutton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 100px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 50px;
+  margin-left: ;
+}
+
+.imagebutton {
+  background-color: #595959;
+  border: none;
+  color: white;
+  padding: 100px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 50px;
+}
+
+.audiobutton {
+  background-color: #999999;
+  border: none;
+  color: white;
+  padding: 100px 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 50px;
+  margin-bottom: 10%;
+}
+
+.videobutton:hover,.audiobutton:hover,.imagebutton:hover {
+  opacity: 0.5;
+}
+
+/* VIDEO *//* VIDEO *//* VIDEO *//* VIDEO *//* VIDEO *//* VIDEO *//* VIDEO *//* VIDEO */
+
+.videocontainer {
+  width: 100%;
+  min-height: ;
+  background-color: lightgrey;
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  padding-top: 50px;
+  margin-bottom: 10%;
+  overflow: auto;
+}
+
+.darkmode .videocontainer {
+  background-color: #1a1a1a;
+
+}
+
+.videodesc {
+  width: 100%;
+  padding: 10px;
+  clear: right;
+}
+
+.videodesc p{
+  font-size: 2vh;
+  padding: 8px;
+}
+
+video {
+  clear: both;
+  left: 500px;
+}
+
+ iframe {
+  max-width: 700px;
+  width: 100%;
+  clear: both;
+  min-height: 300px;
+}
+
+@media screen and (min-width: 700px) {
+
+video, iframe {
+  float: left;
+  width: 50%;
+  height: inherit;
+  position: ;
+  clear: both;
+  min-height: 400px;
+
+}
+
+.videodesc {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 200px;
+
+}
+
+
+}
+
+
+/* IMAGE *//* IMAGE *//* IMAGE *//* IMAGE *//* IMAGE *//* IMAGE *//* IMAGE *//* IMAGE */
+
+.rowgallery {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.rowgallery,
+.rowgallery > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3%;
+  display: none; /* Hide all elements by default */
+}
+
+@media screen and (max-width: 700px) {
+
+.column {
+  float: left;
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 1000px) {
+
+.column {
+  float: left;
+  width: 25%;
+}
+}
+
+/* Clear floats after rows */
+.rowgallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.darkmode .content {
+  background-color: #1a1a1a;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  width: ;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+#myBtnContainer {
+  width: 100%;
+  text-align: center;
+
+}
+
+
+/* AUDIO *//* AUDIO *//* AUDIO *//* AUDIO *//* AUDIO *//* AUDIO *//* AUDIO *//* AUDIO */
+
+.audiosection {
+  background-color: #b3ffff;
+  width: 100%;
+  max-height: px;
+  padding: inherit;
+}
+
+.darkmode .audiosection {
+  background-color: darkgrey;
+  color: white;
+}
+
+audio {
+  margin-bottom: 1%;
+}
+
+.audioimg, .audiodesc{
+  float: left;
+  width: 50%;
+  padding: 9px;
+}
+
+@media screen and (max-width: 700px) { /* MOBILE */
+  .audioimg, .audiodesc{
+    float: left;
+    width: 100%;
+    padding: px;
+  }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.7s;
+  margin-bottom: 7%;
+}
+
+.panel p {
+  font-size: 13px;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 8px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
